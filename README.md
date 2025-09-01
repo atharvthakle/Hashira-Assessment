@@ -4,27 +4,26 @@ This assessment was a part of the Hashira on-campus placement drive, the task wa
 
 Input is provided as a JSON file containing:
 
-n: total number of data points.
-
-k: minimum number of points required (k = degree of polynomial + 1).
+- n: The number of roots provided in the given JSON
+- k: The minimum number of roots required to solve for the coefficients of the polynomial
+- k = m + 1, where m is the degree of the polynomial
 
 Each point contains:
 
-Key = x-coordinate.
-
-"base" = numerical base of the value.
-
-"value" = y-coordinate in that base.
+- Key = x-coordinate.
+- "base" = numerical base of the value.
+- "value" = y-coordinate in that base.
 
 The goal:
 
-Parse and convert all points to decimal.
+- Parse and convert all points to decimal.
+- Use polynomial interpolation (Lagrange’s method) to recover the polynomial.
+- Identify the constant term (secret).
+- Detect and list any wrong data points that don’t fit the polynomial.
 
-Use polynomial interpolation (Lagrange’s method) to recover the polynomial.
+### Hint
 
-Identify the constant term (secret).
-
-Detect and list any wrong data points that don’t fit the polynomial.
+Although you can't test your code against the test case in a testing environment, you can double-check it manually by solving the polynomial on paper and comparing the outputs.
 
 ## Structure
 
