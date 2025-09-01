@@ -30,8 +30,7 @@ Detect and list any wrong data points that don’t fit the polynomial.
 
     ├── solution.js      # JavaScript solution code
     ├── testcase1.json   # Provided Test Case 1
-    ├── testcase2.json   # Provided Test Case 2
-    └── README.md        # Project documentation
+    └── testcase2.json   # Provided Test Case 2
 
 ## Output
 
